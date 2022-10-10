@@ -30,3 +30,19 @@ if ($('.partners__list').length) {
         },
     });
 }
+if ($('.hero__big-slider').length) {
+    var swiperHero = new Swiper(".hero__big-slider", {
+        mousewheel: true,
+        loop: true,
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false
+        },
+        preloadImages: false,
+        lazy: true,
+        navigation: {
+            nextEl: ".swiper-button-next vertical",
+            prevEl: ".swiper-button-prev vertical",
+        },
+    });
+}
