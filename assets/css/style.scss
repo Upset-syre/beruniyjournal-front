@@ -1172,6 +1172,9 @@ tr:nth-child(even) {
 
 
 @media (max-width: 991px) {
+    .custom-nav .form-cover {
+        width: 100%;
+    }
     .mainscreen_div{
         div{
             font-size: 12px;
@@ -1240,6 +1243,26 @@ tr:nth-child(even) {
 
 }
 @media (max-width: 767px) {
+    .last_posts__description .links-item img {
+        width: 64px;
+    }
+    .last_posts__img {
+        width: 60%;
+        padding: 20px 12px;
+    }
+    .last_posts__description p {
+        font-size: 12px;
+    }
+    .news-meta span {
+        font-size: 12px;
+    }
+    .last_posts__content {
+        padding: 24px 20px;
+        width: 70%;
+    }
+    .custom-nav .form-cover {
+        width: 100%;
+    }
     .mainscreen_div{
         color: white;
         opacity: 1;
