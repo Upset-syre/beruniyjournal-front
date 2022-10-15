@@ -94,6 +94,7 @@ body {
 .maqola {
   border-radius: 20px;
   padding: 20px;
+  margin-bottom: 8px;
   background-color: var(--bg-color);
 }
 
@@ -1120,6 +1121,28 @@ tr:nth-child(even) {
   font-weight: bold;
   line-height: 32px;
   color: #000000;
+}
+
+.button-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.button-cover button:first-child {
+  margin-right: 12px;
+}
+
+.button-cover button {
+  border-radius: 12px;
+  background-color: #0d6efd;
+  color: var(--white);
+  padding: 8px 20px;
+  margin-bottom: 8px;
+  min-width: 160px;
 }
 
 .single-content {

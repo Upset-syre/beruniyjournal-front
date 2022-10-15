@@ -78,6 +78,7 @@ body{
     border-radius: 20px;
     // border: 1px solid var(--border-color);
     padding: 20px;
+    margin-bottom: 8px;
     background-color: var(--bg-color);
     h3{
         a{
@@ -1065,6 +1066,23 @@ tr:nth-child(even) {
     font-weight: bold;
     line-height: 32px;
     color: #000000; 
+}
+
+.button-cover{
+    display: flex;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    button:first-child{
+        margin-right: 12px;
+    }
+    button{
+        border-radius: 12px;
+        background-color: #0d6efd;
+        color: var(--white);
+        padding: 8px 20px;
+        margin-bottom: 8px;
+        min-width: 160px;
+    }
 }
 
 .single-content {
