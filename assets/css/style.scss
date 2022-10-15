@@ -103,7 +103,24 @@ body{
     color: var(--primary);
     font-weight: 600;
     font-size: 24px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+}
+
+.subjects{
+    h4{
+        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--text-color);
+        border-radius: 16px;
+        // box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+        background-color: var(--bg-color);
+        padding: 16px 0px;
+    }
+    
+
+
+    
 }
 
 .picture_links{
@@ -170,9 +187,11 @@ body{
 }
 
 .partners{
+    margin-bottom: 16px;
     article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         display: block;
     }
+
     .partners__list {
         background-color: #fff;
         border-radius: 20px;
@@ -265,6 +284,61 @@ body{
     }
 
 }
+.a__aside {
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+    box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+    &-item:not(:last-child) {
+        border-bottom: 1px solid #eeeff3;
+    }
+    &-item {
+        padding: 16px 20px;
+    }
+    .a__aside-data{
+        h6 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0;
+            font-size: 16px;
+            color: #000;
+        }
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: normal;
+            font-size: 14px;
+            color: #858997;
+            margin-bottom: 0;
+        }  
+    } 
+    &-img {
+        width: 60px;
+        margin-right: 8px;
+    }
+    
+    .a__aside-body{
+        .a__aside .a__aside-item {
+            padding: 16px 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+        }
+    }
+}
+
+.sect{
+    margin-bottom: 40px;
+}
+
 
 .sidebarblock{
     border-radius: 12px;
@@ -287,6 +361,7 @@ body{
     }
     .title{
         color: var(--text-color);
+        padding: 8px 0;
     }
 }
 
@@ -374,8 +449,66 @@ body{
 
 .my_footer{
     margin-top: 5px;
-    background-color: #43464b;
+    padding-top: 42px;
+    padding-bottom: 27px;
+    background-color: #008dff;
     color: white;
+    p{
+        font-weight: bold;
+    }
+    .footer__links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: left;
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            line-height: 19px;
+            margin-bottom: 12px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #fff;
+            -webkit-transform: translateX(10px);
+            transform: translateX(10px)
+        }
+        strong {
+            color: #fff;
+            margin-bottom: 24px;
+            font-size: 18px;
+            color: #fff;
+            line-height: 24px;
+        }
+        .address__link {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            svg{
+                path{
+                    fill: var(--light-bg-color);
+                }
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+.nav-link{
+    font-weight: 600;
+}
+.navbar-brand{
+    font-weight: bold;
 }
 
 
@@ -405,7 +538,7 @@ body{
 }
 
 .last_posts_div{
-    margin-bottom: 36px;
+    margin-bottom: 40px;
 }
 
 .last_posts {
@@ -547,31 +680,8 @@ body{
      
 }
 
-.subjects{
-    color: white;
-    opacity: 1;
-    z-index: 100;
-    text-align: center;
-    position: relative;
-    top: 100px;
-    max-width: 700px;
-    margin: 0px auto;
-}
 
-.subjects_title{
-    margin-top: 20px;
-    text-align: center;
-}
 
-.subject_list{
-    position: relative;
-    margin-bottom: 20px;
-    text-align: center;
-    border-left: 5px solid rgb(182, 182, 182);
-    span{
-        line-height: 40px;
-    }
-}
 
 .shadow-overlay{
     top: 0;
