@@ -796,6 +796,49 @@ textarea {
         color: black;
     }
 }
+
+.custom-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    .form-cover{
+        display: block;
+        float: right;
+
+    }
+
+}
+.logo{
+    display: inline-block;
+}
+
+.nav-custom-links {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    padding-left: 4px;
+    li:first-child a{
+        font-weight: bold;
+    }
+  }
+
+.nav-custom-item {
+    a{
+    // vertical-align: middle;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding-right: 8px;
+    
+}
+}
+
+
+
+
+
 .main_editor{
     text-align: center;
     margin-bottom: 20px;
