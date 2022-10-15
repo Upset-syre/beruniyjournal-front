@@ -730,6 +730,56 @@ body {
   font-size: 14px;
 }
 
+.news-meta2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+
+.news-meta2 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.news-meta2 svg path {
+  fill: var(--secondary-color);
+}
+
+.news-meta2-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news-meta2-item:first-child {
+  margin-right: 8px;
+}
+
+.news-meta2 span {
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  padding-left: 4px;
+  font-size: 14px;
+}
+
 .shadow-overlay {
   top: 0;
   left: 0;
@@ -1026,8 +1076,7 @@ tr:nth-child(even) {
   align-items: center;
   font-size: 12px;
   color: #000000;
-  line-height: 15px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .single-header__meta .comments {
@@ -1088,8 +1137,7 @@ tr:nth-child(even) {
 }
 
 .single-content .main-img {
-  width: 100%;
-  margin: 10px 0px;
+  margin: 10px 15%;
 }
 
 .single-content .main-img img {
@@ -1269,6 +1317,41 @@ tr:nth-child(even) {
 @media (max-width: 450px) {
   .last_posts__description {
     display: none;
+  }
+  .last_posts__content {
+    padding: 24px 20px;
+    width: 70%;
+  }
+  .last_posts__img {
+    width: 45%;
+    padding: 20px 16px;
+  }
+  .my_footer .footer__links a {
+    font-size: 12px;
+  }
+  .my_footer .footer__links strong {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .my_footer {
+    margin-top: 5px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+  .custom-nav .form-cover {
+    width: 100%;
+  }
+  .nav-custom-item a {
+    font-size: 14px;
+  }
+  .partners .partners__list .partner__item .partner__img {
+    width: 100px;
+  }
+  .title_2 {
+    font-size: 16px;
+  }
+  .subjects h4 {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
