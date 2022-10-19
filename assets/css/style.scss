@@ -103,7 +103,25 @@ body{
             padding: 0px 24px;
             font-size: 14px!important;
         }
+        a:hover{
+            animation: border_color 0.5s;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+
+
+
+        }
         margin: 8px 4px;
+    }
+}
+
+@keyframes border_color{
+    0%{
+        border: 1px solid var(--secondary-color);
+    }
+    100%{
+        border: 1px solid var(--primary);
+        color: var(--primary);
     }
 }
 
@@ -323,6 +341,12 @@ body{
     }
     &-item {
         padding: 16px 20px;
+        transition: all .3s ease;
+
+    }
+    &-item:hover{
+        transform: scale(1.03);
+        
     }
     .a__aside-data{
         h6 {
@@ -790,7 +814,13 @@ body{
     color: #505780;
     background-color: #e6edff;
     font-weight: bold;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
 
+.all:hover{
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px)
 }
 
 .form{
@@ -1119,6 +1149,13 @@ tr:nth-child(even) {
         margin-bottom: 8px;
         min-width: 160px;
     }
+}
+
+.btn{
+    transition: all .3s ease;
+}
+.btn:hover{
+    transform: scale(1.03);    
 }
 
 .single-content {

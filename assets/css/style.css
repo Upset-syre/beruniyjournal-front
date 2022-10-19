@@ -134,6 +134,33 @@ body {
   font-size: 14px !important;
 }
 
+.tags-item a:hover {
+  -webkit-animation: border_color 0.5s;
+          animation: border_color 0.5s;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+@-webkit-keyframes border_color {
+  0% {
+    border: 1px solid var(--secondary-color);
+  }
+  100% {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+  }
+}
+
+@keyframes border_color {
+  0% {
+    border: 1px solid var(--secondary-color);
+  }
+  100% {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+  }
+}
+
 .maqola {
   border-radius: 20px;
   padding: 20px;
@@ -369,6 +396,13 @@ body {
 
 .a__aside-item {
   padding: 16px 20px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.a__aside-item:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .a__aside .a__aside-data h6 {
@@ -860,6 +894,13 @@ body {
   color: #505780;
   background-color: #e6edff;
   font-weight: bold;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.all:hover {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 .form {
@@ -1183,6 +1224,16 @@ tr:nth-child(even) {
   padding: 8px 20px;
   margin-bottom: 8px;
   min-width: 160px;
+}
+
+.btn {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .single-content {
