@@ -141,6 +141,15 @@ body {
   color: var(--primary);
 }
 
+.card {
+  margin-bottom: 20px;
+}
+
+.card-text {
+  height: 100px;
+  display: block;
+}
+
 @-webkit-keyframes border_color {
   0% {
     border: 1px solid var(--secondary-color);

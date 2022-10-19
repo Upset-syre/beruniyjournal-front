@@ -115,6 +115,14 @@ body{
     }
 }
 
+.card{
+    margin-bottom: 20px;
+    &-text{
+        height: 100px;
+        display: block;
+    }
+}
+
 @keyframes border_color{
     0%{
         border: 1px solid var(--secondary-color);
