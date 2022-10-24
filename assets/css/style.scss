@@ -327,7 +327,13 @@ $accent: #4285F4;
     box-sizing: border-box;
     margin: 32px auto 20px!important;
     overflow: hidden;
-  
+    ::-webkit-file-upload-button {
+        background: #0d6efd;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        
+      }
     
   
     &-group {
@@ -387,6 +393,7 @@ $accent: #4285F4;
         font-weight: 500;
         line-height: inherit;
         transition: 0.3s ease;
+        
   
         &:focus {
           color: $dark-gray;
@@ -432,7 +439,7 @@ $accent: #4285F4;
   
     // Panel
     &-panel {
-      padding: 60px calc(5% + 60px) 60px 60px;
+      padding: 60px 40px;
       box-sizing: border-box;
   
       // Panel One
@@ -1734,6 +1741,9 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 450px) {
+    .form-panel {
+        padding: 60px 16px;
+     }
     .last_posts__description {
         display: none;
     }

@@ -330,6 +330,13 @@ iframe {
   overflow: hidden;
 }
 
+.form ::-webkit-file-upload-button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
 .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,7 +446,7 @@ iframe {
 }
 
 .form-panel {
-  padding: 60px calc(5% + 60px) 60px 60px;
+  padding: 60px 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1652,6 +1659,9 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 450px) {
+  .form-panel {
+    padding: 60px 16px;
+  }
   .last_posts__description {
     display: none;
   }
