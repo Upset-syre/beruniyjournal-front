@@ -306,6 +306,16 @@ iframe {
   height: fit-content;
 }
 
+.search {
+  margin: 36px 0;
+}
+
+.search .results {
+  margin: 24px 16px;
+  font-size: 20px;
+  color: var(--light-text-color);
+}
+
 .overlay, .form-panel.one:before {
   position: absolute;
   top: 0;
@@ -481,6 +491,39 @@ iframe {
 .two .form-header h1 {
   position: relative;
   z-index: 40;
+  color: white;
+}
+
+.switch {
+  width: 100%;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 36px;
+}
+
+.switch-item {
+  height: inherit;
+  border-radius: 16px;
+  line-height: inherit;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+.switch-item:hover {
+  cursor: pointer;
+}
+
+.switch-active {
+  background-color: #008dff;
   color: white;
 }
 
@@ -1192,6 +1235,34 @@ iframe {
 .custom-nav .form-cover {
   display: block;
   float: right;
+}
+
+.form-cover input {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  z-index: 2;
+  padding: 5px 10px;
+  color: #008dff;
+  line-height: 16px;
+  border: 2px solid #008dff;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.form-cover button {
+  margin-left: -8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #008dff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 0 10px 10px 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .logo {
