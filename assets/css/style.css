@@ -507,6 +507,7 @@ iframe {
       -ms-flex-align: center;
           align-items: center;
   line-height: 36px;
+  margin-bottom: 30px;
 }
 
 .switch-item {

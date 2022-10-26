@@ -46,3 +46,10 @@ if ($('.hero__big-slider').length) {
         },
     });
 }
+
+document.querySelectorAll('.switch-item').forEach(x=>{
+    x.addEventListener("click", function() {
+        $( ".switch-item.switch-active" ).removeClass('switch-active');
+        $( this ).addClass( 'switch-active');
+      })
+});
