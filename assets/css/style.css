@@ -326,6 +326,16 @@ iframe {
   height: 100%;
 }
 
+.page-item:first-child a {
+  border-bottom-left-radius: 12px !important;
+  border-top-left-radius: 12px !important;
+}
+
+.page-item:last-child a {
+  border-bottom-right-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}
+
 .form {
   z-index: 15;
   position: relative;
