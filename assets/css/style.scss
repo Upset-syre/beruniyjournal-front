@@ -18,6 +18,7 @@
     --border-color: #e6edff;
     --table-hover: rgba(52, 122, 226, 0.1);
     --danger: #f16063;
+    --base-color: #07BBCE;
 }
 
 
@@ -51,7 +52,8 @@ body {
 
 .my_header {
     /*background-color: #000421;*/
-    background-color: #008dff;
+    background-image: linear-gradient(to right, var(--base-color) , var(--primary));
+    // background-color: var(--base-color);
     padding: 16px 24px;
 }
 
@@ -122,8 +124,8 @@ body {
 
         a:hover {
             animation: border_color 0.5s;
-            border: 1px solid var(--primary);
-            color: var(--primary);
+            border: 1px solid var(--base-color);
+            color: var(--base-color);
 
 
 
@@ -175,8 +177,8 @@ iframe {
     }
 
     100% {
-        border: 1px solid var(--primary);
-        color: var(--primary);
+        border: 1px solid var(--base-color);
+        color: var(--base-color);
     }
 }
 
@@ -206,7 +208,7 @@ iframe {
 
 
 .title_2 {
-    color: var(--primary);
+    color: var(--base-color);
     font-weight: 600;
     font-size: 24px;
     margin-bottom: 24px;
@@ -788,7 +790,7 @@ $accent: #4285F4;
 
 .popular {
     a {
-        color: var(--primary);
+        color: var(--base-color);
         margin-bottom: 8px;
         width: auto;
         height: auto;
@@ -813,7 +815,7 @@ $accent: #4285F4;
 
         h3 {
             p {
-                color: var(--primary);
+                color: var(--base-color);
                 font-size: 20px;
             }
         }
@@ -848,7 +850,7 @@ $accent: #4285F4;
     margin-top: 5px;
     padding-top: 42px;
     padding-bottom: 27px;
-    background-color: #008dff;
+    background-color: var(--base-color);
     color: white;
 
     p {
