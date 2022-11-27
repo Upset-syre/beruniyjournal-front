@@ -53,3 +53,12 @@ document.querySelectorAll('.switch-item').forEach(x=>{
         $( this ).addClass( 'switch-active');
       })
 });
+
+if ($('.main-swiper').length) {
+    var swiper = new Swiper(".main-swiper", {
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+    });
+}
