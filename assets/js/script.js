@@ -57,7 +57,7 @@ document.querySelectorAll('.switch-item').forEach(x=>{
 if ($('.main-swiper').length) {
     var swiper = new Swiper(".main-swiper", {
         autoplay: {
-            delay: 2500,
+            delay: 3500,
             disableOnInteraction: false,
           },
     });
