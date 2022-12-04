@@ -1899,6 +1899,26 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 1200px) {
+  .button-wrapper button {
+    font-size: 14px;
+  }
+  .news-content .news-image img {
+    width: 140px;
+    height: 100%;
+  }
+  .news-content .news-about .date svg {
+    height: 20px;
+    width: 20px;
+  }
+  .news-content .news-about .date span {
+    font-size: 14px;
+  }
+  .news-content .news-about .news-title {
+    font-size: 16px;
+  }
+  .news-content .news-about .news-desc {
+    font-size: 12px;
+  }
   .nav-logo {
     height: 100px;
     width: 100px;
@@ -2117,6 +2137,29 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 450px) {
+  .button-wrapper button {
+    font-size: 12px;
+  }
+  .news-content .news-image img {
+    width: 100px;
+    height: 100%;
+  }
+  .news-content .news-about {
+    padding: 16px 16px 0px 16px;
+  }
+  .news-content .news-about .date svg {
+    height: 20px;
+    width: 20px;
+  }
+  .news-content .news-about .date span {
+    font-size: 14px;
+  }
+  .news-content .news-about .news-title {
+    font-size: 14px;
+  }
+  .news-content .news-about .news-desc {
+    font-size: 10px;
+  }
   .maqola {
     height: 180px;
   }
@@ -2156,8 +2199,15 @@ tr:nth-child(even) {
     padding-top: 16px;
     padding-bottom: 20px;
   }
-  .custom-nav .form-cover {
+  .custom-nav-content .custom-nav-item p {
+    font-size: 14px;
+  }
+  .custom-nav-content .form-cover {
     width: 100%;
+    min-width: 200px;
+  }
+  .custom-nav-content .form-cover input {
+    padding: 0 10px;
   }
   .nav-custom-item a {
     font-size: 14px;
