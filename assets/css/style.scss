@@ -1105,9 +1105,6 @@ $accent: #4285F4;
     overflow: hidden;
 }
 
-.last_posts__img:hover+.last_posts__content .last_posts__title {
-    color: #003BB3;
-}
 
 .last_posts__img img {
     -webkit-transition: 1s;
@@ -1135,9 +1132,6 @@ $accent: #4285F4;
     margin-bottom: 16px;
 }
 
-.last_posts__title:hover {
-    color: #003BB3;
-}
 
 .last_posts__description {
     p {
@@ -1174,16 +1168,59 @@ $accent: #4285F4;
     }
 }
 
-.last_posts__big .last_posts__title:hover {
-    color: #003BB3 !important;
+
+
+.news{
+    margin-bottom: 24px;
+    &-content{
+        display: flex;
+        justify-content: left;
+        flex-wrap: nowrap;
+        
+        .news-image{
+            float: left;
+            border: 1px solid black;
+            img{
+                height: 100%;
+                width: 150px;
+            }
+        }
+        .news-about{
+            .date{
+                display: block;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                margin-bottom: 10px;
+                svg{
+                    path{
+                        fill: var(--muted-color)
+                    }
+                }
+                span{
+                    margin-left: 8px;
+                    color: var(--muted-color);
+                }
+            }
+            padding: 16px 16px 16px 16px;
+            .news-title{
+                font-size: 20px;
+                font-weight: 600;
+                color: var(--light-text-color);
+            }
+            .news-desc{
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--placeholder-color);
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
 }
-
-.last_posts__big .last_posts:hover .last_posts__title {
-    color: #000000;
-}
-
-
-
 .gallery-item .news-meta {
     background-image: none;
     padding-left: 0;
