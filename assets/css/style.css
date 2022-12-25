@@ -1829,6 +1829,11 @@ tr:nth-child(even) {
   padding-top: 10px;
 }
 
+.single-content .news-img img {
+  height: 500px !important;
+  margin-bottom: 10px;
+}
+
 .single-content::after {
   width: calc(100% - 40px);
   height: 1px;
@@ -1899,6 +1904,9 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 1200px) {
+  .single-content .news-img img {
+    height: 400px !important;
+  }
   .button-wrapper button {
     font-size: 14px;
   }
